@@ -21,12 +21,19 @@
             margin: 20px;
         }
 
+        .action-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
         .action-card {
-            margin: 20px auto;
+            margin: 20px;
             padding: 20px;
             background-color: #F9F9F9;
             border: 1px solid #ddd;
-            width: 50%;
+            width: 25%;
+            min-width: 300px;
             text-align: left;
         }
 
@@ -73,20 +80,22 @@
         <p><a href="(link to PDF)" target="_blank">Download Paper</a></p>
 
         <h2>Get Involved</h2>
-        <div class="action-card">
-            <h3>Suggest Additional Papers</h3>
-            <p>Help us improve the survey by suggesting additional papers.</p>
-            <button onclick="window.open('(link to Google Form)', '_blank')">Submit a Paper</button>
-        </div>
-        <div class="action-card">
-            <h3>Join Our Slack</h3>
-            <p>Join our community on Slack to discuss ideas, ask questions, and share insights.</p>
-            <button onclick="window.open('(link to Slack)', '_blank')">Join Slack</button>
-        </div>
-        <div class="action-card">
-            <h3>Sign Up for Reading Groups</h3>
-            <p>Sign up for our reading groups where we discuss papers and key concepts.</p>
-            <button onclick="window.open('(link to sign-up form)', '_blank')">Sign Up</button>
+        <div class="action-container">
+            <div class="action-card">
+                <h3>Suggest Additional Papers</h3>
+                <p>Help us improve the survey by suggesting additional papers.</p>
+                <button onclick="window.open('(link to Google Form)', '_blank')">Submit a Paper</button>
+            </div>
+            <div class="action-card">
+                <h3>Join Our Slack</h3>
+                <p>Join our community on Slack to discuss ideas, ask questions, and share insights.</p>
+                <button onclick="window.open('(link to Slack)', '_blank')">Join Slack</button>
+            </div>
+            <div class="action-card">
+                <h3>Sign Up for Reading Groups</h3>
+                <p>Sign up for our reading groups where we discuss papers and key concepts.</p>
+                <button onclick="window.open('(link to sign-up form)', '_blank')">Sign Up</button>
+            </div>
         </div>
 
         <h2>Sister Surveys</h2>
