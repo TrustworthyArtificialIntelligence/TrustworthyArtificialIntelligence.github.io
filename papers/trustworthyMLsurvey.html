@@ -8,17 +8,40 @@
             margin: 0;
             padding: 0;
             background-color: #F2F2F2;
+            text-align: center;
         }
 
         .header {
             padding: 20px;
-            text-align: center;
             background-color: #333;
             color: white;
         }
 
         .content {
             margin: 20px;
+        }
+
+        .action-card {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #F9F9F9;
+            border: 1px solid #ddd;
+            width: 50%;
+            text-align: left;
+        }
+
+        .action-card button {
+            background-color: #0066CC;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 0;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .action-card button:hover {
+            background-color: #0052a3;
         }
 
         a {
@@ -50,9 +73,21 @@
         <p><a href="(link to PDF)" target="_blank">Download Paper</a></p>
 
         <h2>Get Involved</h2>
-        <p><a href="(link to Google Form)" target="_blank">Suggest Additional Papers</a></p>
-        <p><a href="(link to Slack)" target="_blank">Join Our Slack</a></p>
-        <p><a href="(link to sign-up form)" target="_blank">Sign Up for Reading Groups</a></p>
+        <div class="action-card">
+            <h3>Suggest Additional Papers</h3>
+            <p>Help us improve the survey by suggesting additional papers.</p>
+            <button onclick="window.open('(link to Google Form)', '_blank')">Submit a Paper</button>
+        </div>
+        <div class="action-card">
+            <h3>Join Our Slack</h3>
+            <p>Join our community on Slack to discuss ideas, ask questions, and share insights.</p>
+            <button onclick="window.open('(link to Slack)', '_blank')">Join Slack</button>
+        </div>
+        <div class="action-card">
+            <h3>Sign Up for Reading Groups</h3>
+            <p>Sign up for our reading groups where we discuss papers and key concepts.</p>
+            <button onclick="window.open('(link to sign-up form)', '_blank')">Sign Up</button>
+        </div>
 
         <h2>Sister Surveys</h2>
         <p>(Provide links and brief descriptions of other survey papers)</p>
