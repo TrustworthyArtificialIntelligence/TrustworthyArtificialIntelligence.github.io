@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Towards Trustworthy and Aligned ML: A Data-centric Survey</title>
     <style>
         body {
@@ -11,10 +13,20 @@
             text-align: center;
         }
 
-        .header {
+        .header, nav {
             padding: 20px;
             background-color: #333;
             color: white;
+        }
+
+        nav {
+            background-color: #444;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
         }
 
         .content {
@@ -45,6 +57,7 @@
             margin: 10px 0;
             cursor: pointer;
             text-align: center;
+            transition: background-color 0.3s;
         }
 
         .action-card button:hover {
@@ -62,8 +75,20 @@
 
         pre {
             text-align: left;
+            background-color: #f5f5f5;
+            padding: 15px;
+            overflow-x: auto;
         }
 
+        @media (max-width: 768px) {
+            .action-card {
+                width: 100%;
+            }
+
+            .action-container {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
@@ -71,17 +96,24 @@
         <h1>Towards Trustworthy and Aligned ML:</h1>
         <h2>A Data-centric Survey with Causality Perspectives</h2>
     </div>
-
+    <nav>
+        <a href="#authors">Authors</a>
+        <a href="#abstract">Abstract</a>
+        <a href="#paper">Paper</a>
+        <a href="#involved">Get Involved</a>
+    </nav>
     <div class="content">
-        <h2>Authors</h2>
-        <p>Haoyang Liu, Maheep Chaudhary, and Haohan Wang</p>
+        <section id="authors">
+            <h2>Authors</h2>
+            <p>Haoyang Liu, Maheep Chaudhary, and Haohan Wang</p>
+        </section>
 
         <h2>Abstract</h2>
         <p>(Insert abstract here)</p>
-
+ 
         <h2>Paper</h2>
         <p><a href="(link to PDF)" target="_blank">Download Paper</a></p>
-
+ 
         <h2>Get Involved</h2>
         <div class="action-container">
             <div class="action-card">
@@ -100,10 +132,10 @@
                 <button onclick="window.open('(link to sign-up form)', '_blank')">Sign Up</button>
             </div>
         </div>
-
+ 
         <h2>Sister Surveys</h2>
         <p>(Provide links and brief descriptions of other survey papers)</p>
-
+ 
         <h2>Citation Guide</h2>
         <p>Please use the following BibTex entry to cite our work:</p>
         <pre>
@@ -114,6 +146,11 @@
   publisher={School of Information Sciences, University of Illinois Urbana-Champaign}
 }
         </pre>
+    </div>
+
+        <footer>
+            <p>© 2023 University of Illinois Urbana-Champaign</p>
+        </footer>
     </div>
 </body>
 </html>
