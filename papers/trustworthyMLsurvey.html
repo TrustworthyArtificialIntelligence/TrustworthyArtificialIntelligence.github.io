@@ -80,6 +80,19 @@
             overflow-x: auto;
         }
 
+        .author-affiliation {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: -10px; /* optional, to reduce space between authors and affiliation */
+}
+
+        .citation-container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    text-align: left;
+}
+
+
         @media (max-width: 768px) {
             .action-card {
                 width: 100%;
@@ -106,7 +119,7 @@
         <section id="authors">
             <h2>Authors</h2>
             <p>Haoyang Liu, Maheep Chaudhary, and Haohan Wang</p>
-            <p>School of Information Sciences, University of Illinois Urbana-Champaign</p>
+            <p class="author-affiliation">School of Information Sciences, University of Illinois Urbana-Champaign</p>
         </section>
 
         <h2>Abstract</h2>
@@ -146,9 +159,15 @@
                 <p>Join our organization on trustworthy ML initiative.</p>
                 <button onclick="window.open('(link to Slack)', '_blank')">Go to the Website</button>
             </div>
+            <div class="action-card">
+                <h3>DREAM</h3>
+                <p>Visit the lab drafting this survye paper.</p>
+                <button onclick="window.open('(link to Slack)', '_blank')">Go to lab page</button>
+            </div>
         </div>
  
         <h2>Citation Guide</h2>
+        <div class="citation-container">
         <p>Please use the following BibTex entry to cite our work:</p>
         <div>
         <pre>
@@ -159,6 +178,7 @@
   publisher={School of Information Sciences, University of Illinois Urbana-Champaign}
 }
         </pre>
+        </div>
         </div>
     </div>
 
