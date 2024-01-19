@@ -132,6 +132,15 @@
             1px 1px 0 #000;
         }
 
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+
         
 
         @media (max-width: 768px) {
@@ -163,7 +172,39 @@
     <div class="content">
         <section id="syllabus">
         <h2>Syllabus</h2>
-        
+        <table>
+    <tr>
+        <th>Week</th> <!-- Single 'Week' in the header -->
+        <th>Topic</th>
+        <th>Reading</th>
+        <th>Notes</th>
+        <th>Recording</th>
+    </tr>
+    <!-- Rows for each week -->
+    <tr>
+        <th>Week 1</th> <!-- Week 1 Header -->
+        <td></td> <!-- Data cells for Week 1 -->
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th>Week 2</th> <!-- Week 2 Header -->
+        <td></td> <!-- Data cells for Week 2 -->
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <!-- Repeat the pattern for each week up to Week 16 -->
+    <!-- ... -->
+    <tr>
+        <th>Week 16</th> <!-- Week 16 Header -->
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
         </section>
       
         <section id="instructors">
