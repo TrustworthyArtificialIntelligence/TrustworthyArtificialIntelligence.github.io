@@ -138,15 +138,25 @@
             1px 1px 0 #000;
         }
 
-        table, th, td {
-            border: 1px solid black;
+        table {
             border-collapse: collapse;
+            margin-top: 20px; /* Optional: to give some space from the top */
+            width: 80%; /* Fixed width for the table */
         }
+
         th, td {
-            padding: 5px;
+            border: 1px solid black;
+            padding: 8px;
             text-align: left;
         }
 
+        th.topic, td.topic {
+            width: 20%; /* Fixed width for the Topic column */
+        }
+
+        th.reading, td.reading {
+            width: 20%; /* Fixed width for the Reading column */
+        }
         
 
         @media (max-width: 768px) {
@@ -192,9 +202,9 @@
     <!-- Rows for each week -->
     <tr>
         <th>Week 1</th> <!-- Week 1 Header -->
-        <td></td> <!-- Data cells for Week 1 -->
+        <td>Introduction</td> <!-- Data cells for Week 1 -->
         <td></td>
-        <td></td>
+        <td>[Slide]</td>
         <td></td>
         <td></td>
     </tr>
