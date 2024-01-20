@@ -60,9 +60,10 @@
             background-color: #0052a3;
         }
 
-        .centered-table {
-            margin: 0 auto;
-            display: block;
+        .centered-table-container {
+            width: 100%; /* Full width of the container */
+            display: flex;
+            justify-content: center; /* Centering content horizontally */
         }
 
         a {
@@ -178,7 +179,7 @@
         <section id="syllabus">
         <h2>Syllabus</h2>
 
-    <div class="centered-table">
+    <div class="centered-table-container">
         <table>
     <tr>
         <th>Week</th> <!-- Single 'Week' in the header -->
