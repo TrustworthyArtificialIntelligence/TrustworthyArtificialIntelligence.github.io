@@ -173,6 +173,33 @@
         th.recording, td.recording {
             width: 10%;
         }
+
+        .instructor-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .instructor-info, .instructor-photo {
+            flex: 1; /* Each panel takes up equal width */
+            padding: 10px;
+        }
+        
+        /* Additional styling */
+        .instructor-info {
+            text-align: left;
+        }
+
+        .instructor-photo {
+            text-align: center; /* Center the photo inside the right panel */
+        }
+
+        .instructor-photo img {
+            max-width: 100%; /* Ensure the image does not overflow the panel */
+            height: auto;
+            border-radius: 5px; /* Optional: rounds the corners of the image */
+        }
         
 
         @media (max-width: 768px) {
@@ -351,8 +378,29 @@
       
         <section id="instructors">
             <h2>Instructors</h2>
-            <p><a href="https://ischool.illinois.edu/people/haoyang-liu">Haoyang Liu</a>, <a href="https://maheepchaudhary.github.io/maheep.github.io/">Maheep Chaudhary</a>, and <a href="https://haohanwang.github.io/">Haohan Wang</a></p>
-            <p class="author-affiliation">School of Information Sciences, University of Illinois Urbana-Champaign</p>
+            <div class="instructor-container">
+                <div class="instructor-info">
+                    <!-- Instructor's Name and Research Interests -->
+                    <p>Instructor</p>
+                    <p><a href="https://haohanwang.github.io/">Haohan Wang</a></p>
+                    <p>Research Interests: Trustworthy Machine Learning, Computational Biology</p>
+                    <p>Office Hours: 2-3pm Thursday</p>
+                </div>
+                <div class="instructor-photo">
+                    <img src="https://haohanwang.github.io/img/haohanwang.jpg" alt="Haohan Wang">
+                </div>
+            </div>
+            <div class="instructor-container">
+                <div class="instructor-info">
+                    <p>Instructor</p>
+                    <p><a href="https://ischool.illinois.edu/people/haoyang-liu">Haoyang Liu</a></p>
+                    <p>Research Interests: dataset distillation, robustness in vision, AI for biomedical research</p>
+                    <p>Office Hours: TBD</p>
+                </div>
+                <div class="instructor-photo">
+                    <img src="https://media.licdn.com/dms/image/C4E03AQFFTXSs_X95ww/profile-displayphoto-shrink_800_800/0/1629917884863?e=1710979200&v=beta&t=mFTRe5eMGBuTNYYb27YZzla3rJjuUL_o_77Lp5B4rCg" alt="Haohan Wang">
+                </div>
+            </div>
         </section>
 
         <section id="logistics">
