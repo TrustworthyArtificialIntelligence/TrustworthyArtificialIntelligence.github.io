@@ -33,13 +33,35 @@
             text-align: center;
             clear: both;
         }
+
+        .banner {
+            background-color: #555; /* Temporary background color */
+            background-image: url('banner.jpg'); /* Add your image path here */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 50px 0; /* Adjust the padding to increase or decrease the height */
+        }
+
+        .banner-title {
+            font-size: 3em; /* Large font size for the title */
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner-subtitle {
+            font-size: 1.5em; /* Smaller font size for the subtitle */
+            margin: 0;
+            padding: 20px 0; /* Space above and below the subtitle */
+        }
     </style>
 </head>
 <body>
     <div class="hero">
-        <h1>Trustworthy AI</h1>
+        <h1 class="banner-title">Trustworthy AI</h1>
 
-        <p>Resources of Trustworthy AI maintained by the <a href="https://dreamlabuiuc.github.io/">DREAM</a> lab directed by <a href="https://haohanwang.github.io/">Haohan Wang</a> at iSchool UIUC</p>
+        <p class="banner-subtitle">Resources of Trustworthy AI maintained by the <a href="https://dreamlabuiuc.github.io/">DREAM</a> lab directed by <a href="https://haohanwang.github.io/">Haohan Wang</a> at iSchool UIUC</p>
     </div>
     <div class="section">
         <div class="block">
