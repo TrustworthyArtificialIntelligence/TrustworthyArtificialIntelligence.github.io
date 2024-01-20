@@ -174,14 +174,27 @@
             width: 10%;
         }
 
+        .instructor-section {
+            text-align: center; /* Centers the content */
+            margin: 20px 0; /* Adds top and bottom margins for spacing */
+        }
+
         .instructor-container {
             display: flex;
-            justify-content: center;
+            justify-content: space-around; /* This will add space around the items */
             align-items: center;
-            margin-top: 20px;
+            max-width: 800px; /* Maximum width of the container */
+            margin: auto; /* This will center the container */
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for styling */
         }
         
-        .instructor-info, .instructor-photo {
+        .instructor-info {
+            flex: 2; /* Allows text to take more space */
+            padding: 10px;
+        }
+        
+        .instructor-photo {
             flex: 1; /* Each panel takes up equal width */
             padding: 10px;
         }
@@ -380,6 +393,7 @@
       
         <section id="instructors">
             <h2>Instructors</h2>
+            <div class="instructor-section">
             <div class="instructor-container">
                 <div class="instructor-info">
                     <!-- Instructor's Name and Research Interests -->
@@ -394,6 +408,7 @@
                     <p>Research Interests: dataset distillation, robustness in vision, AI for biomedical research</p>
                     <p>Office Hours: TBD</p>
                 </div>
+            </div>
             </div>
         </section>
 
